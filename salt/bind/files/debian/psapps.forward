@@ -1,0 +1,20 @@
+$TTL 86400
+@   IN  SOA     localhost.psapps.emcrubicon.com. root.psapps.emcrubicon.com. (
+        2011071001  ;Serial
+        3600        ;Refresh
+        1800        ;Retry
+        604800      ;Expire
+        86400       ;Minimum TTL
+)
+@       IN  NS          ipa01.psapps.emcrubicon.com.
+@       IN  NS          ipa02.psapps.emcrubicon.com.
+@       IN  NS          salt.psapps.emcrubicon.com.
+@       IN  NS          salt01.psapps.emcrubicon.com.
+@       IN  A           192.168.109.5
+@       IN  A           192.168.109.6
+@       IN  A           192.168.109.2
+ipa01           IN  A   192.168.109.5
+ipa02           IN  A   192.168.109.6
+salt            IN  A   10.130.224.7
+salt01          IN  A   10.130.224.7
+*.psapps.emcrubicon.com. 14400 IN A 172.16.4.8
